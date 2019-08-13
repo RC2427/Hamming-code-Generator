@@ -47,14 +47,14 @@ int main(){
 	
 			count = pow(2,inc);
 			inc++;
-			cout <<	"\nCount : " << count <<endl;
+		//	cout <<	"\nCount : " << count <<endl;
 
 			for(int j = i + 1 ; j < (totBits + bitsAdd); j += (2*(i+1))){
 		//		cout << "\nJ - loop : " << j;
 				if((j - 1) == 0){
 				  j = j + 1;
 				  pbit = codeWord[j];
-				  cout << "\npbit : " << pbit << " j : " << j << " " << codeWord[j];
+		//		  cout << "\npbit : " << pbit << " j : " << j << " " << codeWord[j];
 				  flag = 1;				
 				}
 				else{
@@ -82,7 +82,7 @@ int main(){
 								} 
 								pbit = pbit ^ codeWord[j + k];
 								flag2 = 0;						
-		 cout << "\ni + 1: " << i+1 <<" pbit : " << pbit << " j : " << j << " k : " << k << " j + k : " << j+k;
+		 // cout << "\ni + 1: " << i+1 <<" pbit : " << pbit << " j : " << j << " k : " << k << " j + k : " << j+k;
 							}						
 						}
 					}
